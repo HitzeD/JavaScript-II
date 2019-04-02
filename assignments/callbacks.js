@@ -91,12 +91,17 @@ console.log(contains("yo-yo", items, filtered));
 // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
+  const dupes = ['burgers', 'hotdogs', 'baked potatoes', 'burgers, chicken']
 function removeDuplicates(array, cb) {
   return cb(array);
 }
 
 function sorted(array){
-  array.filter(function(currentValue){
-
-  })
+  for(let i = 0; i < array.length; i++){
+    let
+  }
 }
+
+
+console.log(removeDuplicates(dupes, sorted));
