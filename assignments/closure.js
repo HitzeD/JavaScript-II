@@ -1,6 +1,21 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function ocean(){
+  const king = 'I am King Neptune';
+  console.log(`${king} in the ocean!`);
 
+  function bikiniBottom(){
+    console.log(`${king} in Bikini Bottom!`);
+
+    function trench(){
+      console.log(`${king} in the dark blue`);
+    }
+    trench();
+  }
+  bikiniBottom();
+}
+
+console.log(ocean());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
