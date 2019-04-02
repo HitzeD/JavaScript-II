@@ -88,9 +88,15 @@ console.log(contains("yo-yo", items, filtered));
 
 
 /* STRETCH PROBLEM */
-
-function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
+// removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+function removeDuplicates(array, cb) {
+  return cb(array);
+}
+
+function sorted(array){
+  array.filter(function(currentValue){
+
+  })
 }

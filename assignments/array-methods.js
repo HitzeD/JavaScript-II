@@ -62,7 +62,7 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 let fullName = [];
 let sorting = function(arr){
     arr.forEach(function(currentValue){
-        fullName.push( ${currentValue.first_name} ${currentValue.last_name});
+        fullName.push(currentValue.first_name + ' ' + currentValue.last_name);
     });
 }
 sorting(runners);
@@ -97,8 +97,20 @@ console.log(ticketPriceTotal);
 // I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  
 // Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// Problem 1
+// Problem 1 --Date changed, email needed sent out
+const allMail = [];
+const sortMail = runners.forEach(function(currentValue){
+    allMail.push(currentValue.email);
+});
+console.log(allMail);
 
-// Problem 2
+// Problem 2 Skinix company had to put in OT and couldn't make it to the race get list of all that will be in attendance
+const updatedList = runners.filter(currentValue => !(currentValue.company_name === 'Skinix'));
 
-// Problem 3
+console.log(updatedList);
+
+// Problem 3 Staggering start times, evens will start at one time, odds at another
+const evens = runners.filter(currentValue => ((currentValue.id % 2) === 0));
+const odds = runners.filter(currentValue => !((currentValue.id % 2) === 0));
+
+console.log(evens, odds);
